@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors:{
-        "orange-button":'#ff561e'
+        "blue-button":'#1e40af'
       },
       maxWidth: {
         '1700': '1700px',

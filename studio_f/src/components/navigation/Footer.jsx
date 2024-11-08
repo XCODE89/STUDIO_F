@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo2.png'
 const navigation = {
     solutions: [
       { name: 'Marketing', href: '#' },
