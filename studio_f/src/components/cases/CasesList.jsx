@@ -64,9 +64,9 @@ const CasesList = () => {
       ]
 
     const  breakPoints = [
-        { width: 1, itemsToShow: 1, itemsToScroll: 1 },
-        { width: 1280, itemsToShow: 2, itemsToScroll: 2 },
-        { width: 1750, itemsToShow: 3, itemsToScroll: 2 },
+        { width: 1, itemsToShow: 1, itemsToScroll: 1, itemPadding: [0, 0] },
+        { width: 768, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 24] },
+        { width: 1024, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 48]  },
         // { width: 1450, itemsToShow: 5 },
         // { width: 1750, itemsToShow: 6 },
     ]
@@ -83,7 +83,6 @@ const CasesList = () => {
               itemsToShow={3}
               breakPoints={breakPoints}
               pagination={false}
-              itemPadding={[0, 48]}
             >
               {posts.map((post, index) => (
                 <CaseCard key={index} index={index} data={post}/>
