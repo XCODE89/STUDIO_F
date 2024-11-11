@@ -4,25 +4,25 @@ const CaseCard = ({data,index}) => {
 
     return(
         <Link 
-        to={data.href} 
-        onMouseEnter={()=>{
-            const title_element = document.getElementById(index+100)
-            title_element.classList.add('text-orange-500')
-            const img = document.getElementById(data.id)
-            img.classList.add('scale-95')
-        }} 
-        onMouseLeave={()=>{
-            const title_element = document.getElementById(index+100)
-            title_element.classList.remove('text-orange-500')
-            const img = document.getElementById(data.id)
-            img.classList.remove('scale-95')
-        }} 
-        
-        className="flex flex-col overflow-hidden  rounded-lg shadow-lg">
+            to={data.href} 
+            onMouseEnter={()=>{
+                const title_element = document.getElementById(index+100)
+                title_element.classList.add('text-orange-500')
+                const img = document.getElementById(data.id)
+                img.classList.add('scale-95')
+            }} 
+            onMouseLeave={()=>{
+                const title_element = document.getElementById(index+100)
+                title_element.classList.remove('text-orange-500')
+                const img = document.getElementById(data.id)
+                img.classList.remove('scale-95')
+            }} 
+            className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+        >
             <div className="flex-shrink-0">
                 <img id={data.id} className="h-96 w-full transition duration-400 ease-in-out object-cover" src={data.imageUrl} alt="" />
             </div>
-            <div className="flex flex-1 flex-col justify-between bg-white p-6">
+            <div className="flex flex-1 flex-col justify-between bg-white ">
                 <div className="flex-1">
                     <p className="text-xl font-medium text-gray-800">
                         {/* problemas */}

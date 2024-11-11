@@ -61,9 +61,7 @@ function Navbar(){
                 document.getElementById('navbar').classList.remove('bg-white');
             }
         }
-    }
-
-    const [open, setOpen] = useState(false)
+    };
 
     return(
         <nav data-scroll data-scroll-id="hey" id='navbar' className='w-full py-4 top-0 transition duration-300 ease-in-out z-40 sticky'>
@@ -107,7 +105,7 @@ function Navbar(){
 
                     
                     <Popover className="relative">
-                        {({ open }) => (
+                        {({ open, close }) => (
                         <>
                             <Popover.Button
                             className={`
@@ -137,6 +135,7 @@ function Navbar(){
                                     {solutions.map((item) => (
                                     <Link
                                         key={item.name}
+                                        onClick={close}
                                         to={item.href}
                                         className="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-blue-800 focus-visible:ring-opacity-50"
                                     >
