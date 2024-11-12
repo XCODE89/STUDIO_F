@@ -10,7 +10,7 @@ const CasesList = () => {
           href: '/casos/ecommerce',
           category: { name: 'Ecommerce'},
           description:
-            'Ecommerce website and application made with Django Rest Framework',
+            '1Ecommerce website and application made with Django Rest Framework',
           date: 'Mar 16, 2020',
           datetime: '2020-03-16',
           imageUrl:
@@ -66,7 +66,7 @@ const CasesList = () => {
     const  breakPoints = [
         { width: 1, itemsToShow: 1, itemsToScroll: 1, itemPadding: [0, 0] },
         { width: 768, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 24] },
-        { width: 1024, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 48]  },
+        { width: 1024, itemsToShow: 2, itemsToScroll: 2, itemPadding: [0, 48] },
         // { width: 1450, itemsToShow: 5 },
         // { width: 1750, itemsToShow: 6 },
     ]
